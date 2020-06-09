@@ -1,0 +1,33 @@
+/*=============================================
+GLOBAL
+=============================================*/
+
+*{
+	font-family: 'Roboto', sans-serif;
+	font-weight:900;
+}
+
+a, h1, h2, h3, h4, h5, h6, button, select, option, .input-group, input, .input-group-text, textarea, .nav-link{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style: none;
+	text-decoration: none;
+}
+
+.dropdown-menu{
+	min-width:0% !important;
+	padding:0 !important;
+	font-size:12px !important;
+}
+
+.dropdown-item{
+	padding:8px 18px !important;
+	color:black !important;
+	font-weight:500 !important;
+}
