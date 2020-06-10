@@ -25,9 +25,550 @@
 
 <body>
 
+	<!-- HEADER -->
+	<header class="cabezera" id="cabezeraID">
+		<div class="container py-2 py-lg-3">
+			<div class="row align-items-center justify-content-center">
+				<!-- LOGO, ICONO HAMBURGUEZA -->
+				<div class="col-7 col-lg-3 logo d-flex align-items-center">
+					<!-- MENU DE HAMBURGUEZA -->
+					<i class="fas fa-bars d-inline-block d-lg-none text-white pr-2 lead"></i>
+					<!-- LOGO DEL SITIO -->
+					<a href="index.html">
+						<img src="img/logo.png" alt="Logo del sitio Academy of Life" class="img-fluid">
+					</a>
+				</div>
+				<!-- MENU DE NAVEGACION -->
+				<div class="col-lg-6 d-none d-lg-block">
+					<nav class="menuDeNavegacion">
+						<ul class="list-unstyled m-0 d-flex align-items-center justify-content-center text-center">
+							<li class="px-3 py-2 flex-fill"><a href="#cursosID" class="text-white">Cursos</a></li>
+							<li class="px-3 py-2 flex-fill"><a href="#nosotrosID" class="text-white">Nosotros</a></li>
+							<li class="px-3 py-2 flex-fill"><a href="#testimoniosID" class="text-white">Testimonios</a></li>
+							<li class="px-3 py-2 flex-fill"><a href="#planesID" class="text-white">Planes</a></li>
+							<li class="px-3 py-2 flex-fill"><a href="#faqEscritorioID" class="text-white">FAQ</a></li>
+							<li class="px-3 py-2 flex-fill"><a href="#formularioContactanos" class="text-white">Contáctenos</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- CAMBIAR IDIOMA, LOGIN-REGISTRO -->
+				<div class="col-5 col-lg-3 idiomaLoginRegistro">
+					<!-- IDIOMA -->
+					<div class="dropdown d-none d-lg-inline-block pr-3">
+						<button class="btn btn-light btn-sm dropdown-toggle"
+								type="button" id="dropdownIdioma" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+						  ES
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownIdioma">
+						  <a class="dropdown-item" href="#!">EN</a>
+						</div>
+					</div>
+					<!-- LOGIN-REGISTRO -->
+					<button class="btn btn-info btn-sm">
+						<a href="ingresar.html" class="text-white">Ingresar</a> 
+						<span>|</span> 
+						<a href="registrar.html" class="text-white">Registrar</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
 
+	<!-- MENU MOVIL -->
+	<section id="menuMovil" class="menuPrincipalMovil py-4">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- ICONO DE CERRAR Y REDES SOCIALES -->
+				<div class="col-12 iconoCerrarYRedesSociales d-flex justify-content-between align-items-center">
+					<!-- ICONO CERRAR -->
+					<i class="fas fa-times lead text-white pl-sm-3"></i>
+					<!-- REDES SOCIALES -->
+					<ul class="list-unstyled m-0 d-flex pr-sm-3">
+						<li class="px-2 flex-fill"><a href="#"><i class="fab fa-facebook-f lead text-white"></i></a></li>
+						<li class="px-2 flex-fill"><a href="#"><i class="fab fa-instagram lead text-white"></i></a></li>
+						<li class="px-2 flex-fill"><a href="#"><i class="fab fa-linkedin lead text-white"></i></a></li>
+						<li class="px-2 flex-fill"><a href="#"><i class="fab fa-twitter lead text-white"></i></a></li>
+						<li class="px-2 flex-fill"><a href="#"><i class="fab fa-youtube lead text-white"></i></a></li>
+					</ul>
+				</div>
+				<!-- IDIOMA -->
+				<div class="col-12">
+					<div class="dropdown text-center my-4">
+						<button class="btn btn-light btn-sm dropdown-toggle"
+								type="button" id="dropdownIdioma" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+						  ES
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownIdioma">
+						  <a class="dropdown-item" href="#!">EN</a>
+						</div>
+					</div>
+				</div>
+				<!-- MENU DE NAVEGACION -->
+				<div class="col-12 px-0">
+					<nav class="menuDeNavegacionMovil">
+						<ul class="list-unstyled m-0 d-flex flex-column align-items-center justify-content-center text-center">
+							<li class="py-4 w-100 flex-fill"><a href="#cursosID" class="text-white">Cursos</a></li>
+							<li class="py-4 w-100 flex-fill"><a href="#nosotrosID" class="text-white">Nosotros</a></li>
+							<li class="py-4 w-100 flex-fill"><a href="#testimoniosID" class="text-white">Testimonios</a></li>
+							<li class="py-4 w-100 flex-fill"><a href="#planesID" class="text-white">Planes</a></li>
+							<li class="py-4 w-100 flex-fill"><a href="#faqMovilID" class="text-white">FAQ</a></li>
+							<li class="py-4 w-100 flex-fill"><a href="#formularioContactanos" class="text-white">Contáctenos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<!-- HERO IMAGEN - VIDEO -->
+	<section id="heroPagina" class="hero">
+		<!-- VIDEO DE FONDO -->
+		<video class="d-none d-lg-block" id="videoPresentacion" muted="muted" autoplay loop preload="auto" width="auto">
+			<source type="video/mp4" src="videos/video02.mp4">
+		</video>
+		<!-- FILTRO PARA LA IMAGEN Y EL VIDEO -->
+		<div class="filtro"></div>
+		<!-- TARJETAS DE LOS CURSOS -->
+		<div class="tarjetas">
+			<div class="container py-5 h-100">
+				<div class="row justify-content-center justify-content-md-between align-items-lg-center h-100">
+					<div class="col-12 mt-sm-5 mb-sm-3">
+						<h1 class="text-center tituloPrincipal">Lorem ipsum dolor sit amet.</h1>
+					</div>
+					<!-- TARJETA -->
+					<div class="col-11 col-md-6 col-lg-4 mb-2 mb-md-5 m-lg-0">
+						<div class="contenido px-3 py-5 bgBlanco text-center">
+							<h4>Cuerpo Activo</h4>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+							<div class="icono">
+								<i class="fas fa-heart" style="background:#C1AA92"></i>
+							</div>
+						</div>
+					</div>
+					<!-- TARJETA -->
+					<div class="col-11 col-md-6 col-lg-4 my-5 my-md-0 mb-md-5 m-lg-0">
+						<div class="contenido bgBlanco text-center px-3 py-5">
+							<h4>Mente Sana</h4>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+							<div class="icono">
+								<i class="fas fa-puzzle-piece" style="background:#A17A8C"></i>
+							</div>
+						</div>
+					</div>
+					<!-- TARJETA -->
+					<div class="col-11 col-md-12 col-lg-4 mt-2 mb-3 m-lg-0">
+						<div class="contenido bgBlanco text-center px-3 py-5">
+							<h4>Espíritu Libre</h4>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+							<div class="icono">
+								<i class="fas fa-wind" style="background:#A1B287"></i>
+							</div>
+						</div>
+					</div>
+					<!-- BOTÓN -->
+					<div class="col-12 mt-5 text-center pt-lg-5">
+						<a href="registrar.html" class="btn btn-info btn-lg">Crea una cuenta gratis</a>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<!-- CURSOS -->
+	<section class="cursos my-5" id="cursosID">
+		<div class="container">
+			<!-- CURSO -->
+			<div class="row curso align-items-lg-center justify-content-xl-between mb-4 mb-lg-5">
+				<!-- DESCRIPCIÓN DEL CURSO -->
+				<div class="col-12 col-lg-5 col-xl-4 descripcion">
+					<h3 class="text-center text-lg-left font-weight-bold">Lorem ipsum dolor sit amet consectetur.</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur ullam, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, officiis? temporibus praesentium commodi beatae veritatis nihil sit architecto quo. Dolorem quibusdam quasi placeat nihil.</p>
+					<a href="registrar.html" class="btn btn-info btn-lg d-none d-lg-inline-block">Crear cuenta gratis</a>
+				</div>
+				<!-- MULTIMEDIA -->
+				<div class="col-12 col-lg-7 multimedia">
+					<video poster="img/video01.jpg" width="100%">
+						<source src="videos/video01.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+
+			<!-- CURSO -->
+			<div class="row curso align-items-lg-center justify-content-xl-between mb-4 mb-lg-5">
+				<!-- DESCRIPCIÓN DEL CURSO -->
+				<div class="col-12 col-lg-5 col-xl-4 descripcion order-lg-2">
+					<h3 class="text-center text-lg-right font-weight-bold">Lorem ipsum dolor sit amet consectetur.</h3>
+					<p class="text-lg-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur ullam, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, officiis? temporibus praesentium commodi beatae veritatis nihil sit architecto quo. Dolorem quibusdam quasi placeat nihil.</p>
+					<a href="registrar.html" class="btn btn-info btn-lg d-none d-lg-inline-block float-right">Crear cuenta gratis</a>
+				</div>
+				<!-- MULTIMEDIA -->
+				<div class="col-12 col-lg-7 multimedia order-lg-1">
+					<video poster="img/video02.jpg" width="100%">
+						<source src="videos/video02.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+
+			<!-- CURSO -->
+			<div class="row curso align-items-lg-center justify-content-xl-between mb-4 mb-lg-5">
+				<!-- DESCRIPCIÓN DEL CURSO -->
+				<div class="col-12 col-lg-5 col-xl-4 descripcion">
+					<h3 class="text-center text-lg-left font-weight-bold">Lorem ipsum dolor sit amet consectetur.</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur ullam, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, officiis? temporibus praesentium commodi beatae veritatis nihil sit architecto quo. Dolorem quibusdam quasi placeat nihil.</p>
+					<a href="registrar.html" class="btn btn-info btn-lg d-none d-lg-inline-block">Crear cuenta gratis</a>
+				</div>
+				<!-- MULTIMEDIA -->
+				<div class="col-12 col-lg-7 multimedia">
+					<video poster="img/video03.jpg" width="100%">
+						<source src="videos/video03.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- NOSOTROS -->
+	<section class="nosotros py-3 py-lg-5" id="nosotrosID">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+					<i class="fas fa-users rounded-circle mb-2"></i>
+					<p class="text-center px-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+					<i class="fas fa-graduation-cap rounded-circle mb-2"></i>
+					<p class="text-center px-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+					<i class="fas fa-laptop rounded-circle mb-2"></i>
+					<p class="text-center px-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+					<i class="fas fa-check rounded-circle mb-2"></i>
+					<p class="text-center px-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- TESTIMONIOS -->
+	<section class="testimonios py-3 py-lg-5" id="testimoniosID">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 col-lg-4 mb-3 mb-lg-0 mb-lg-0">
+					<div class="imagen">
+						<img src="img/testimonio01.jpg" class="img-fluid">
+					</div>
+					<h4 class="my-3 font-weight-light">Lorem ipsum dolor sit, amet consectetur adipisicing.</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati consequuntur similique neque suscipit doloribus quia mollitia explicabo veniam architecto inventore?</p>
+				</div>
+
+				<div class="col-12 col-lg-4 mb-3 mb-lg-0">
+					<div class="imagen">
+						<img src="img/testimonio02.jpg" class="img-fluid">
+					</div>
+					<h4 class="my-3 font-weight-light">Lorem ipsum dolor sit, amet consectetur adipisicing.</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati consequuntur similique neque suscipit doloribus quia mollitia explicabo veniam architecto inventore?</p>
+				</div>
+
+				<div class="col-12 col-lg-4 mb-3 mb-lg-0">
+					<div class="imagen">
+						<img src="img/testimonio03.jpg" class="img-fluid">
+					</div>
+					<h4 class="my-3 font-weight-light">Lorem ipsum dolor sit, amet consectetur adipisicing.</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati consequuntur similique neque suscipit doloribus quia mollitia explicabo veniam architecto inventore?</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- PLANES -->
+	<section id="planesID" class="planes py-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-10 col-md-9 col-lg-10 mb-2">
+					<p class="text-white text-center lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni quas delectus unde, itaque reprehenderit repudiandae quos fugiat hic tenetur.</p>
+				</div>
+				<!-- PLAN PRUEBA-->
+				<div class="col-10 col-md-4 col-lg-3 bg-light prueba p-5 text-center border">
+					<div class="descripcionPlan py-4">
+						<h4>Prueba</h4>
+						<h4 class="my-4">$ <span class="precio">0 </span> <sup>.00</sup> </h4>
+						<div class="caracteristicas my-3">
+							<p class="mb-0">10 Clases</p>
+							<p class="mb-0">5 Descargas</p>
+							<p class="mb-0">24/7 Soporte</p>
+						</div>
+						<a href="#" class="btn btn-info btn-sm w-75 mt-4">Elegir</a>
+					</div>
+				</div>
+				<!-- PLAN ESTUDIANTIL -->
+				<div class="col-10 col-md-4 col-lg-3 bg-light estudiantil p-5 text-center border">
+					<div class="descripcionPlan py-4">
+						<h4>Estudiantil</h4>
+						<h4 class="my-4">$ <span class="precio">200 </span> <sup>.00</sup> </h4>
+						<div class="caracteristicas my-3">
+							<p class="mb-0">Clases ilimitadas</p>
+							<p class="mb-0">10 Descargas</p>
+							<p class="mb-0">24/7 Soporte</p>
+						</div>
+						<a href="#" class="btn btn-info btn-sm w-75 mt-4">Elegir</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ MOVIL -->
+	<section class="faqMovil d-lg-none" id="faqMovilID">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="headerCard">
+						<h4 class="mb-0">FAQ</h4>
+					</div>
+					<div id="accordion">
+
+						<!-- PREGUNTA 1-->
+						<div class="card">
+						  <!-- PREGUNTA -->
+						  <div class="card-header" id="pregunta1" data-toggle="collapse" data-target="#contenido1" aria-expanded="true" aria-controls="contenido1">
+							<h5 class="mb-0">
+								Pregunta 1
+							</h5>
+						  </div>
+						  <!-- RESPUESTA -->
+						  <div id="contenido1" class="collapse" aria-labelledby="pregunta1" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						  </div>
+						</div>
+
+						<!-- PREGUNTA 2-->
+						<div class="card">
+						  <!-- PREGUNTA -->
+						  <div class="card-header" id="pregunta2" data-toggle="collapse" data-target="#contenido2" aria-expanded="true" aria-controls="contenido2">
+							<h5 class="mb-0">
+								Pregunta 2
+							</h5>
+						  </div>
+						  <!-- RESPUESTA -->
+						  <div id="contenido2" class="collapse" aria-labelledby="pregunta2" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						  </div>
+						</div>
+
+						<!-- PREGUNTA 3-->
+						<div class="card">
+						  <!-- PREGUNTA -->
+						  <div class="card-header" id="pregunta3" data-toggle="collapse" data-target="#contenido3" aria-expanded="true" aria-controls="contenido3">
+							<h5 class="mb-0">
+								Pregunta 3
+							</h5>
+						  </div>
+						  <!-- RESPUESTA -->
+						  <div id="contenido3" class="collapse" aria-labelledby="pregunta3" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						  </div>
+						</div>
+
+						<!-- PREGUNTA 4-->
+						<div class="card">
+						  <!-- PREGUNTA -->
+						  <div class="card-header" id="pregunta4" data-toggle="collapse" data-target="#contenido4" aria-expanded="true" aria-controls="contenido4">
+							<h5 class="mb-0">
+								Pregunta 4
+							</h5>
+						  </div>
+						  <!-- RESPUESTA -->
+						  <div id="contenido4" class="collapse" aria-labelledby="pregunta4" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						  </div>
+						</div>
+
+						<!-- PREGUNTA 5-->
+						<div class="card">
+						  <!-- PREGUNTA -->
+						  <div class="card-header" id="pregunta5" data-toggle="collapse" data-target="#contenido5" aria-expanded="true" aria-controls="contenido5">
+							<h5 class="mb-0">
+								Pregunta 5
+							</h5>
+						  </div>
+						  <!-- RESPUESTA -->
+						  <div id="contenido5" class="collapse" aria-labelledby="pregunta5" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						  </div>
+						</div>
+
+						<!-- PREGUNTA 6-->
+						<div class="card">
+						  <!-- PREGUNTA -->
+						  <div class="card-header" id="pregunta6" data-toggle="collapse" data-target="#contenido6" aria-expanded="true" aria-controls="contenido6">
+							<h5 class="mb-0">
+								Pregunta 6
+							</h5>
+						  </div>
+						  <!-- RESPUESTA -->
+						  <div id="contenido6" class="collapse" aria-labelledby="pregunta6" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						  </div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ ESCRITORIO -->
+	<section class="faqEscritorio d-none d-lg-block" id="faqEscritorioID">
+		<div class="container py-5 my-4">
+			<div class="row">
+				<!-- PREGUNTAS -->
+				<div class="col-5">
+					<div class="headerCard">
+						<h4 class="mb-0">FAQ</h4>
+					</div>
+					<ul class="list-group preguntas">
+						<li class="list-group-item d-flex justify-content-between align-items-center" data-respuesta="respuesta1">
+							<h5 class="mb-0 active">Pregunta 1</h5>
+							<i class="fas fa-chevron-left active"></i>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center" data-respuesta="respuesta2">
+							<h5 class="mb-0">Pregunta 2</h5>
+							<i class="fas fa-chevron-right"></i>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center" data-respuesta="respuesta3">
+							<h5 class="mb-0">Pregunta 3</h5>
+							<i class="fas fa-chevron-right"></i>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center" data-respuesta="respuesta4">
+							<h5 class="mb-0">Pregunta 4</h5>
+							<i class="fas fa-chevron-right"></i>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center" data-respuesta="respuesta5">
+							<h5 class="mb-0">Pregunta 5</h5>
+							<i class="fas fa-chevron-right"></i>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center" data-respuesta="respuesta6">
+							<h5 class="mb-0">Pregunta 6</h5>
+							<i class="fas fa-chevron-right"></i>
+						</li>
+					</ul>
+				</div>
+				<!-- RESPUESTAS -->
+				<div class="respuestas col-7 py-5 mt-3 px-lg-4 px-xl-5">
+					<div id="respuesta1" class="d-block">
+						<h5>Respuesta 1</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsa magnam neque expedita tenetur dolores reiciendis ducimus itaque distinctio inventore. Animi soluta voluptatem placeat blanditiis porro?</p>
+					</div>
+					<div id="respuesta2" class="d-none">
+						<h5>Respuesta 2</h5>
+						<p>Lorem ipsum dolor sit amet, sed quia officiis quam aperiam nobis aliquid, amet nemo voluptas ipsum ipsa magnam neque expedita tenetur dolores reiciendis ducimui soluta voluptatem placeat blanditiis porro?</p>
+					</div>
+					<div id="respuesta3" class="d-none">
+						<h5>Respuesta 3</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. aperiam nobis aliquid, amet nemo voluptas ipsum ipsa magnam neque expedita tenetur dolores reiciendis ducimus itaque distinctio ?</p>
+					</div>
+					<div id="respuesta4" class="d-none">
+						<h5>Respuesta 4</h5>
+						<p>Lorem ipsum dolor sit amet, amet nemo voluptas ipsum ipsa magnam neque expedita tenetur dolores reiciendis ducimus itaque distinctio inventore. Animi soluta voluptatem placeat blanditiis porro?</p>
+					</div>
+					<div id="respuesta5" class="d-none">
+						<h5>Respuesta 5</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciun nobis aliquid, amet nemo voluptas ipsum ipsa magnam neque expedita tenetur dolores reiciendis ducimus itaque distinctio inventore. Animi soluta voluptatem placeat blanditiis porro?</p>
+					</div>
+					<div id="respuesta6" class="d-none">
+						<h5>Respuesta 6</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. . Animi soluta voluptatem placeat blanditiis porro?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SCROLL UP -->
+	<div id="scrollUP">
+		<a href="#"></a>
+	</div>
+
+	<!-- PIE DE PÁGINA -->
+	<footer class="pieDePagina py-5" id="pieDePaginaID">
+		<div class="container">
+			<div class="row justify-content-lg-between">
+				<!-- BLOQUE VISITANOS -->
+				<div class="col-12 col-lg-6 mb-4 mb-lg-0 order-lg-2 px-lg-5">
+					<div class="visitanos p-5">
+						<h3 class="titulo">Visítanos</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae distinctio nobis.</p>
+
+						<p class="mb-0">Apple inc.</p>
+						<p class="mb-0">Loop Infinito</p>
+						<p class="mb-0">San Jose, CA 98953</p>
+						<p class="">124-927-0000</p>
+
+						<p class="mb-0">Email: info@apple.com</p>
+						<p class="mb-0">Tel: 1-897-671-2345</p>
+					</div>
+				</div>
+				<!-- FORMULARIO DE CONTACTO -->
+				<div id="formularioContactanos" class="col-12 col-lg-6 contacto order-lg-1 pr-lg-5">
+					<form action="#" id="">
+						<p class="text-white text-uppercase lead text-center text-lg-left">Contáctenos</p>
+
+						<div class="form-group">
+							<label for="nombre" class="sr-only">Nombre</label>
+							<input type="text" name="nombre" id="nombre" class="form-control form-control-lg" placeholder="Nombre">
+						</div>
+
+						<div class="form-group">
+							<label for="correoElectronico" class="sr-only">Correo electronico</label>
+							<input type="email" name="correoElectronico" id="correoElectronico" class="form-control form-control-lg" placeholder="Correo electronico">
+						</div>
+
+						<div class="form-group">
+							<label for="mensaje" class="sr-only">Mensaje</label>
+							<textarea name="mensaje" id="mensaje" class="form-control form-control-lg" rows="5" placeholder="Ingrese su mensaje"></textarea>
+						</div>
+
+						<div class="form-group">
+							<a href="#" class="btn btn-info btn-block btn-lg text-white">Enviar</a>
+						</div>
+
+					</form>
+					<nav class="mt-4 redesSociales">
+						<ul class="list-unstyled m-0 d-flex justify-content-around">
+							<li><a href="#"><i class="fab fa-facebook-f lead text-white"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram lead text-white"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin lead text-white"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter lead text-white"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube lead text-white"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!--=====================================
 				VÍNCULOS JAVASCRIPT
