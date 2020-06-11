@@ -20,21 +20,27 @@ function ocultarMenuMovil(){
 	menuMovil.style.display = 'none';
 }
 
-iconoMenu.addEventListener('click', (e)=>{
-	e.preventDefault();
-	mostrarMenuMovil();
-});
+if(iconoMenu){
+	iconoMenu.addEventListener('click', (e)=>{
+		e.preventDefault();
+		mostrarMenuMovil();
+	});
+}
 
-iconoCerrar.addEventListener('click', (e)=>{
-	e.preventDefault();
-	ocultarMenuMovil();
-});
-
-opcionesDelMenuMovil.forEach((opcion) => {
-	opcion.addEventListener('click', (e)=>{
+if(iconoCerrar){
+	iconoCerrar.addEventListener('click', (e)=>{
+		e.preventDefault();
 		ocultarMenuMovil();
-	})
-});
+	});
+}
+
+if(opcionesDelMenuMovil){
+	opcionesDelMenuMovil.forEach((opcion) => {
+		opcion.addEventListener('click', (e)=>{
+			ocultarMenuMovil();
+		})
+	});
+}
 
 
 
@@ -127,17 +133,21 @@ let scrollUP = document.getElementById('scrollUP');
 
 window.onscroll = () => {
 	//PARA CAMBIAR DE COLOR LA BARRA DE NAVEGACIÓN
-	if(window.scrollY > 50){
-		barraDeNavegacion.style.backgroundColor = color;
-	}else{
-		barraDeNavegacion.style.backgroundColor = 'rgba(0,0,0, .1)';
+	if(barraDeNavegacion){
+		if(window.scrollY > 50){
+			barraDeNavegacion.style.backgroundColor = color;
+		}else{
+			barraDeNavegacion.style.backgroundColor = 'rgba(0,0,0, .1)';
+		}
 	}
 
 	//PARA HACER APARECER Y DESAPARECER EL SCROLL UP
-	if(window.scrollY > 300){
-		scrollUP.style.display = 'block';
-	}else{
-		scrollUP.style.display = 'none';
+	if(scrollUP){
+		if(window.scrollY > 300){
+			scrollUP.style.display = 'block';
+		}else{
+			scrollUP.style.display = 'none';
+		}
 	}
 }
 
@@ -146,37 +156,42 @@ window.onscroll = () => {
 */
 let enlacesMenu = document.querySelectorAll('.menuDeNavegacion li a');
 //Obtengo la altura de la barra de navegación
-let alturaBarra = barraDeNavegacion.getBoundingClientRect().height;
+if(barraDeNavegacion){
+	let alturaBarra = barraDeNavegacion.getBoundingClientRect().height;
+}
 
-enlacesMenu.forEach((enlace) => {
-	enlace.addEventListener('click', (e)=>{
-		e.preventDefault();
-		//Obtengo el id que tiene la propiedad href el enlace
-		let ancla = enlace.getAttribute('href').substring(1);
-		//Busco el elemento por el id
-		let elemento = document.getElementById(ancla);
-		//Obtengo la posicion del elemento buscado
-		let posicion = elemento.offsetTop;
-		
-		//realizo el desplazamiento y le resto la altura de la barra de navegacion
-		window.scrollTo(0, posicion - alturaBarra)
+if(enlacesMenu){
+	enlacesMenu.forEach((enlace) => {
+		enlace.addEventListener('click', (e)=>{
+			e.preventDefault();
+			//Obtengo el id que tiene la propiedad href el enlace
+			let ancla = enlace.getAttribute('href').substring(1);
+			//Busco el elemento por el id
+			let elemento = document.getElementById(ancla);
+			//Obtengo la posicion del elemento buscado
+			let posicion = elemento.offsetTop;
+			
+			//realizo el desplazamiento y le resto la altura de la barra de navegacion
+			window.scrollTo(0, posicion - alturaBarra)
+	
+		})
+	});
+}
 
-	})
-});
-
-
-opcionesDelMenuMovil.forEach((enlace) => {
-	enlace.addEventListener('click', (e)=>{
-		e.preventDefault();
-		//Obtengo el id que tiene la propiedad href el enlace
-		let ancla = enlace.getAttribute('href').substring(1);
-		//Busco el elemento por el id
-		let elemento = document.getElementById(ancla);
-		//Obtengo la posicion del elemento buscado
-		let posicion = elemento.offsetTop;
-		
-		//realizo el desplazamiento y le resto la altura de la barra de navegacion
-		window.scrollTo(0, posicion - alturaBarra)
-		console.log(alturaBarra)
-	})
-});
+if(opcionesDelMenuMovil){
+	opcionesDelMenuMovil.forEach((enlace) => {
+		enlace.addEventListener('click', (e)=>{
+			e.preventDefault();
+			//Obtengo el id que tiene la propiedad href el enlace
+			let ancla = enlace.getAttribute('href').substring(1);
+			//Busco el elemento por el id
+			let elemento = document.getElementById(ancla);
+			//Obtengo la posicion del elemento buscado
+			let posicion = elemento.offsetTop;
+			
+			//realizo el desplazamiento y le resto la altura de la barra de navegacion
+			window.scrollTo(0, posicion - alturaBarra)
+			console.log(alturaBarra)
+		})
+	});
+}
