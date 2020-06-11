@@ -155,15 +155,13 @@ window.onscroll = () => {
 	REALIZAR EL DESPLAZAMIENTO ENTRE LOS ENLACES DE LA MISMA PÁGINA
 */
 let enlacesMenu = document.querySelectorAll('.menuDeNavegacion li a');
-//Obtengo la altura de la barra de navegación
-if(barraDeNavegacion){
-	let alturaBarra = barraDeNavegacion.getBoundingClientRect().height;
-}
 
 if(enlacesMenu){
 	enlacesMenu.forEach((enlace) => {
 		enlace.addEventListener('click', (e)=>{
 			e.preventDefault();
+			//Obtengo la altura de la barra de navegación
+			let alturaBarra = barraDeNavegacion.getBoundingClientRect().height;
 			//Obtengo el id que tiene la propiedad href el enlace
 			let ancla = enlace.getAttribute('href').substring(1);
 			//Busco el elemento por el id
@@ -182,6 +180,8 @@ if(opcionesDelMenuMovil){
 	opcionesDelMenuMovil.forEach((enlace) => {
 		enlace.addEventListener('click', (e)=>{
 			e.preventDefault();
+			//Obtengo la altura de la barra de navegación
+			let alturaBarra = barraDeNavegacion.getBoundingClientRect().height;
 			//Obtengo el id que tiene la propiedad href el enlace
 			let ancla = enlace.getAttribute('href').substring(1);
 			//Busco el elemento por el id
